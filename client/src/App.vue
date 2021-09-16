@@ -1,6 +1,8 @@
 <template>
-  <div>{{message}}</div>
-  <child ></child>
+  <ul v-for="message in messages" :key="message">
+    <child :message="message" ></child>
+  </ul>
+
 </template>
 
 
@@ -13,7 +15,18 @@ export default {
   },
   data() {
     return {
-      message: 'Vue is working just fine!'
+      messages: [
+        'This is the first of many messaages',
+        'This is the second of many messages',
+        'This is the third of many messages',
+        'This is the fourth of many messages',
+        'This is the fifth of many messages',
+        'This is the sixth of many messages',
+        'This is the seventh of many messages',
+        'This is the eighth of many messages',
+        'This is the ninth of many messages',
+        'This is the last of the messages',
+      ]
     }
   }
 }

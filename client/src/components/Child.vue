@@ -1,11 +1,15 @@
 <template>
-  <div>
-    And now we have birthed a child.
-  </div>
+  <li>
+    {{ message }}
+  </li>
 
 </template>
 
 <script>
+
+export default {
+  props: ["message"],
+};
 
 </script>
 
