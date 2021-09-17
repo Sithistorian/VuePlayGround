@@ -1,7 +1,9 @@
 <template>
-  <li>
+  <li :hover="hover" v-on:mouseover="hover = true"
+        v-if="!hover">
     {{ message }}
   </li>
+  <li v-else v-on:mouseleave="hover = false">Where did it go?</li>
 
 </template>
 
@@ -9,6 +11,10 @@
 
 export default {
   props: ["message"],
+  data () {
+    return {
+      hover: false
+  }}
 };
 
 </script>

@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       messages: [
-        'This is the first of many messaages',
+        'This is the first of many messages',
         'This is the second of many messages',
         'This is the third of many messages',
         'This is the fourth of many messages',
